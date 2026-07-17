@@ -18,7 +18,7 @@ def changeRes(width, height):
 capture = cv.VideoCapture('CV/Videos/dog_video.mp4')
 while True:
     isTrue, frame = capture.read()
-    frame_resized = rescaleFrame(frame,scale=.55)
+    frame_resized = rescaleFrame(frame, scale = .3)
     cv.imshow('Video', frame)
     cv.imshow('Video Resized', frame_resized)
 
